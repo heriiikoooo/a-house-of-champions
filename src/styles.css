@@ -1,1 +1,162 @@
-/* You can add global styles to this file, and also import other style files */
+/* @import url('/node_modules/bootstrap/dist/css/bootstrap.min.css'); */
+
+
+/* @font-face {
+    font-family: "San Francisco" !important;
+    font-weight: normal !important;
+    font-style: normal;
+    src: url("assets/font/sanfranciscodisplay-regular-webfont.woff") format('truetype')!important;
+  } */
+
+  @font-face {
+    font-family: "San Francisco";
+    font-weight: normal !important;
+    font-style: normal;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff") format('truetype');
+  }
+
+.custom-card {
+    padding-top: 1.5rem !important;
+    padding-left: 3rem !important;
+}
+
+.section-title {
+    font-family: "San Francisco";
+    font-weight: 400; 
+    line-height: 1.2; 
+    font-size: 5rem;
+    
+}
+
+.section-subtitle{
+    font-weight: 400 !important;
+    letter-spacing: 0.0rem !important;
+}
+
+.section-subtitle .initials {
+    font-weight: 500 !important;
+    /* font-size: 2.2rem; */
+}
+.content-text {
+    font-family: "San Francisco" !important;
+    font-size: 1.2em !important;
+    font-weight: 300; 
+    letter-spacing: 0.03em !important;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.sub-content {
+    font-family: "San Francisco" !important;
+    font-size: 1.2em !important;
+    font-weight: 300; 
+    letter-spacing: 0.03em !important;
+    line-height: 1.4;
+    color: #000000;
+}
+
+/* #fe0101 */
+
+
+@media only screen and (max-width: 991px) {
+    .responsive-img img{
+      /* border: 1px solid red !important; */
+      height: 280px !important;
+      width: 100% !important;
+    }
+
+    .custom-card {
+        /* border: 1px solid red !important; */
+        padding-left: 1rem !important;
+    }
+    .section-title {
+        font-size: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .responsive-img img{
+      height: 250px !important;
+      width: 100% !important;
+}
+
+    .section-title {
+        font-size: 4rem !important;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .responsive-img img{
+      height: 200px !important;
+      width: 100% !important;
+}
+
+    .section-title {
+        font-size: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .responsive-img img{
+      height: 170px !important;
+      width: 100% !important;
+    }
+
+    .section-title {
+        font-size: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-title {
+        font-size: 3.7rem !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .section-title {
+        font-size: 3.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section-title {
+        font-size: 3.2rem !important;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .section-title {
+        font-size: 2.8rem !important;
+    }
+
+    .toolbar {
+        height: 77px !important;
+    }
+
+    .toolbar img{
+        width: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .responsive-img img{
+      height: 170px !important;
+      width: 100% !important;
+    }
+
+    .section-title {
+        font-size: 2.5rem !important;
+    }
+
+    .toolbar {
+        height: 70px !important;
+    }
+
+    .toolbar img{
+        width: 50px;
+    }
+}
