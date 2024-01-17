@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { VisionComponent } from './components/vision/vision.component';
 import { MissionComponent } from './components/mission/mission.component';
 import { CoreValuesComponent } from './components/core-values/core-values.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { CoreValuesComponent } from './components/core-values/core-values.compon
     HeaderComponent,
     VisionComponent,
     MissionComponent,
-    CoreValuesComponent
+    CoreValuesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

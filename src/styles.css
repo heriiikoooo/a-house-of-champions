@@ -1,19 +1,33 @@
 /* @import url('/node_modules/bootstrap/dist/css/bootstrap.min.css'); */
 
 
-/* @font-face {
-    font-family: "San Francisco" !important;
-    font-weight: normal !important;
+@font-face {
+    font-family: "San Francisco";
+    font-weight: normal;
     font-style: normal;
-    src: url("assets/font/sanfranciscodisplay-regular-webfont.woff") format('truetype')!important;
-  } */
+    src: url("assets/font/sanfranciscodisplay-regular-webfont.woff") format('truetype');
+}
 
-  @font-face {
+@font-face {
+    font-family: "San Francisco Medium";
+    font-weight: normal;
+    font-style: normal;
+    src: url("assets/font/sanfranciscodisplay-medium-webfont.woff") format('truetype');
+}
+
+@font-face {
+    font-family: "San Francisco Light";
+    font-weight: normal;
+    font-style: normal;
+    src: url("assets/font/sanfranciscodisplay-light-webfont.woff") format('truetype');
+}
+
+  /* @font-face {
     font-family: "San Francisco";
     font-weight: normal !important;
     font-style: normal;
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff") format('truetype');
-  }
+  } */
 
 .custom-card {
     padding-top: 1.5rem !important;
@@ -22,15 +36,17 @@
 
 .section-title {
     font-family: "San Francisco";
-    font-weight: 400; 
+    /* font-weight: 400;  */
     line-height: 1.2; 
-    font-size: 5rem;
+    font-size: 3.8rem;
     
 }
 
 .section-subtitle{
+    font-family: "San Francisco" !important;
     font-weight: 400 !important;
-    letter-spacing: 0.0rem !important;
+    letter-spacing: 0.04rem !important;
+    
 }
 
 .section-subtitle .initials {
@@ -112,17 +128,55 @@
     .section-title {
         font-size: 3.7rem !important;
     }
+
+    .toolbar img{
+        width: 90px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
     .section-title {
         font-size: 3.5rem !important;
     }
+
+    .toolbar img{
+        width: 80px;
+    }
+
+    #brand-title {
+        padding-left: 3px !important;
+        font-size: 19px !important;
+        line-height: 19px !important;
+        letter-spacing: 0.03rem !important;
+      }
+    
+      #brand-qoute {
+        padding-left: 3px !important;
+        font-size: 15px !important;
+        letter-spacing: 0.03rem !important
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .section-title {
         font-size: 3.2rem !important;
+    }
+
+    .toolbar img{
+        width: 70px;
+    }
+
+    #brand-title {
+        padding-left: 3px !important;
+        font-size: 18px !important;
+        line-height: 18px !important;
+        letter-spacing: 0.03rem !important;
+      }
+    
+      #brand-qoute {
+        padding-left: 3px !important;
+        font-size: 14px !important;
+        letter-spacing: 0.03rem !important
     }
 }
 
@@ -138,6 +192,19 @@
 
     .toolbar img{
         width: 60px;
+    }
+
+    #brand-title {
+        padding-left: 3px !important;
+        font-size: 17px !important;
+        line-height: 17px !important;
+        letter-spacing: 0.03rem !important;
+      }
+    
+      #brand-qoute {
+        padding-left: 3px !important;
+        font-size: 13px !important;
+        letter-spacing: 0.03rem !important
     }
 }
 
@@ -158,5 +225,18 @@
 
     .toolbar img{
         width: 50px;
+    }
+
+    #brand-title {
+        padding-left: 3px !important;
+        font-size: 17px !important;
+        line-height: 17px !important;
+        letter-spacing: 0.03rem !important;
+      }
+    
+      #brand-qoute {
+        padding-left: 3px !important;
+        font-size: 13px !important;
+        letter-spacing: 0.03rem !important
     }
 }
