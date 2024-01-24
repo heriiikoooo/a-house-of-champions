@@ -1,0 +1,31 @@
+<div id="test" style="overflow: hidden !important;">
+<div class="min-vh-100 d-flex align-items-center justify-content-center w-100" id="main-div" style="overflow: hidden !important">
+    <app-header id="ahoc-navbar" style="position: absolute; top:0; width: 100%;"></app-header>
+    
+    <div class="center-section">
+        <div class="mt-4 text-center" id="tagline">Helping Grow Your Faith</div>
+        <div class="pt-4 text-center" id="tagline-sub">Sub Text Here</div>
+        <div class="d-flex justify-content-center pt-5">
+            <div role="button" class="d-flex align-items-center justify-content-center section-button mx-1 ">NEW HERE</div>
+            <div role="button" class="d-flex align-items-center justify-content-center section-button mx-1" id="stream-div">
+                <span style="padding-right: 5px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 34 34" fill="none">
+                        <circle cx="17" cy="17" r="17" fill="white" fill-opacity="0.5"/>
+                        <path d="M30 17L10.5 28.2583L10.5 5.74167L30 17Z" fill="#7B121E"/>
+                        </svg>
+                </span>
+                 LIVE STREAM
+            </div>
+        </div>
+        <div (click)="scrollToTarget('nextId')" role="button" class="arrow-down-icon text-center pt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="32" fill="white" fill-opacity="0.5"/>
+                <path d="M31.2929 45.7071C31.6834 46.0976 32.3166 46.0976 32.7071 45.7071L39.0711 39.3431C39.4616 38.9526 39.4616 38.3195 39.0711 37.9289C38.6805 37.5384 38.0474 37.5384 37.6569 37.9289L32 43.5858L26.3431 37.9289C25.9526 37.5384 25.3195 37.5384 24.9289 37.9289C24.5384 38.3195 24.5384 38.9526 24.9289 39.3431L31.2929 45.7071ZM31 18L31 45L33 45L33 18L31 18Z" fill="white"/>
+            </svg>
+        </div>
+    </div>
+</div>
+<div id="nextId" class="d-flex min-vh-100">
+    <div> Next</div>
+</div>
+</div>

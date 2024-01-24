@@ -26,26 +26,59 @@
     margin: 0 50px;
   } */
 
-  #brand-title {
-    font-size: 22px;
-    font-family: "San Francisco Medium";
+  .brand-title {
+    font-size: 24px;
+    font-family: "PoiretOne";
     line-height: 30px;
-    letter-spacing: 0.05rem;
+    letter-spacing: 12.48px;
     font-weight: 600;
+    color: #FFF;
   }
 
-  #brand-qoute {
+  .brand-qoute {
     font-size: 15px ;
-    font-family: "San Francisco Light";
-    color: rgba(0, 0, 0, 0.685) !important;
+    font-family: "MontserratAlternates";
+    /* color: rgba(0, 0, 0, 0.685); */
+    color: #FFF;
     line-height: 17px;
     letter-spacing: 0.03rem;
-    font-weight: 600;
+    /* font-weight: 600; */
   }
 
+  .header-social-icons {
+    padding-right: 1rem !important;
+  }
+  .header-social-icons .items {
+    padding: 0 8px !important;
+  }
+  
+  .header-social-icons .items svg {
+    width: 24px !important;
+    height: 24px !important;
+    flex-shrink: 0;
+  }
+
+  .header-social-icons .items svg  path{
+    fill: #fffffff1;
+  }
+
+
+  #toggler-icon {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+  }
+
+  #navbarSupportedContent {
+    padding-left: 1.5rem !important;
+    /* background: rgba(123, 18, 30, 0.50); */
+
+  }
   .nav-item{
     font-family: "San Francisco Medium";
     letter-spacing: 0.04rem;
+  }
+
+  .nav-item .nav-link {
+    color: #fffffff1;
   }
 
   .toolbar #twitter-logo {

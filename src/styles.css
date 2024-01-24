@@ -1,5 +1,28 @@
 /* @import url('/node_modules/bootstrap/dist/css/bootstrap.min.css'); */
+/* PoiretOne-Regular */
 
+@font-face {
+    font-family: "PoiretOne";
+    font-weight: normal;
+    font-style: normal;
+    src: url("assets/font/PoiretOne-Regular.ttf") format('truetype');
+}
+
+
+@font-face {
+    font-family: "MontserratAlternates";
+    font-weight: normal;
+    font-style: normal;
+    src: url("assets/font/MontserratAlternates-Light.ttf") format('truetype');
+}
+
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("assets/font/NunitoSans_10pt-Regular.ttf") format('truetype');
+}
 
 @font-face {
     font-family: "San Francisco";
@@ -13,6 +36,10 @@
     font-weight: normal;
     font-style: normal;
     src: url("assets/font/sanfranciscodisplay-medium-webfont.woff") format('truetype');
+}
+
+body {
+    background-color: #FFFFFF !important;
 }
 
 @font-face {
@@ -143,14 +170,14 @@
         width: 80px;
     }
 
-    #brand-title {
+    .brand-title {
         padding-left: 3px !important;
         font-size: 19px !important;
         line-height: 19px !important;
         letter-spacing: 0.03rem !important;
       }
     
-      #brand-qoute {
+    .brand-qoute {
         padding-left: 3px !important;
         font-size: 15px !important;
         letter-spacing: 0.03rem !important
@@ -166,14 +193,14 @@
         width: 70px;
     }
 
-    #brand-title {
+    .brand-title {
         padding-left: 3px !important;
         font-size: 18px !important;
         line-height: 18px !important;
         letter-spacing: 0.03rem !important;
       }
     
-      #brand-qoute {
+    .brand-qoute {
         padding-left: 3px !important;
         font-size: 14px !important;
         letter-spacing: 0.03rem !important
@@ -194,18 +221,22 @@
         width: 60px;
     }
 
-    #brand-title {
+    .brand-title {
         padding-left: 3px !important;
         font-size: 17px !important;
         line-height: 17px !important;
         letter-spacing: 0.03rem !important;
       }
     
-      #brand-qoute {
+    .brand-qoute {
         padding-left: 3px !important;
         font-size: 13px !important;
         letter-spacing: 0.03rem !important
     }
+
+    /* #toggler-icon {
+        background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    } */
 }
 
 
@@ -227,14 +258,14 @@
         width: 50px;
     }
 
-    #brand-title {
+    .brand-title {
         padding-left: 3px !important;
         font-size: 17px !important;
         line-height: 17px !important;
         letter-spacing: 0.03rem !important;
-      }
+    }
     
-      #brand-qoute {
+    .brand-qoute {
         padding-left: 3px !important;
         font-size: 13px !important;
         letter-spacing: 0.03rem !important
