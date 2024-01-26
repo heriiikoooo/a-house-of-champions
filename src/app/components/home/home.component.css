@@ -2,10 +2,13 @@
     position: relative;
     background:
   linear-gradient(
-    rgba(0, 0, 0, 0.726),
-    rgba(0, 0, 0, 0.555)
+    rgba(0, 0, 0, 0.616),
+    rgba(0, 0, 0, 0.877)
   ),
-  url('/assets/img/main-bg.jpg'), lightgray 0% / cover no-repeat  !important;
+  url('/assets/img/main-bg.jpg'), lightgray 0% / cover no-repeat;
+
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
 
 
   /* background:
@@ -15,13 +18,35 @@
   ),
   url('/assets/img/main-bg.jpg'), lightgray 0% / cover no-repeat  !important; */
     
-    background-position: 60% 10% !important;
+    background-position: 60% 10%;
+    background-size: cover !important;
 
 }
 
-.test {
-    background-color: rgba(255, 255, 255, 0.979);
+#test {
+    /* background-color: rgba(255, 255, 255, 0.979); */
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.726),
+      rgba(0, 0, 0, 0.555)
+    ),
+    url('/assets/img/main-bg-org.png'), lightgray 0% / cover no-repeat  !important;
+  
+    /* filter: blur(5px);
+    -webkit-filter: blur(5px); */
+    /* filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='4' result='b'/%3E%3CfeMorphology operator='dilate' radius='4'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E %3C/svg%3E#a"); */
+    /* background-position: 60% 10% !important; */
+    height: 100vh;
+    /* padding: 10px ; */
+    /* margin: -10px; */
+    /* margin-top: -5px; */
+    /* margin-bottom: -20px !important; */
 }
+
+/* #main-div {
+    position: absolute;
+    top: 0;
+} */
 
 /* ._cover {
     min-height: 100vh !important;
@@ -116,4 +141,46 @@
     width: 60px;
     height: 60px;
     flex-shrink: 0;
+}
+
+
+/* next page style  */
+#up-coming {
+    /* width: 721px; */
+    height: 450px;
+    background: linear-gradient(
+        rgba(63, 62, 62, 0.5),
+        rgba(63, 62, 62, 0.849)
+      ),
+    url('/assets/img/contents/up-coming-events-bg.jpg'), lightgray 50% / cover no-repeat;
+    background-blend-mode: luminosity;
+    
+    /* background-size: cover; */
+    background-position: 20% 100%;
+    padding-top: 7rem;
+    padding-left: 20rem;
+    padding-right: 10rem ;
+}
+
+.content-section-title {
+    color: #FFF;
+    /* text-align: center; */
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+.content-section-data {
+    color: #FFF;
+
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    padding-top: 2rem;
 }

@@ -40,6 +40,7 @@
 
 body {
     background-color: #FFFFFF !important;
+    overflow-x: hidden !important;
 }
 
 @font-face {
@@ -251,23 +252,136 @@ body {
     }
 
     .toolbar {
-        height: 70px !important;
+        height: 48px !important;
     }
 
     .toolbar img{
         width: 50px;
     }
 
+    #main-div {
+        background-position: 45% 50% !important;
+    }
+
     .brand-title {
         padding-left: 3px !important;
         font-size: 17px !important;
         line-height: 17px !important;
-        letter-spacing: 0.03rem !important;
+        letter-spacing: 0.4rem !important;
+        /* color:red !important; */
     }
     
     .brand-qoute {
         padding-left: 3px !important;
-        font-size: 13px !important;
-        letter-spacing: 0.03rem !important
+        font-size: 10px !important;
+        letter-spacing: 0.04rem !important;
+        /* color:red !important; */
     }
+
+    .header-social-icons {
+        padding-right: 0 !important;
+      }
+    .header-social-icons .items {
+        padding: 0 8px !important;
+    }
+
+    .header-social-icons .items svg {
+        width: 15px !important;
+        height: 15px !important;
+        flex-shrink: 0;
+    }
+
+    .navbar-toggler-icon {
+        /* border:1px solid red !important; */
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .container, .toolbar {
+        padding-left: 4px !important;
+        padding-right: 0 !important;
+    }
+
+    #tagline {
+        font-size: 38px !important;
+        line-height: normal;
+        letter-spacing: 6.4px;
+    }
+
+    #tagline-sub {
+        font-size: 18px !important;
+        line-height: normal;
+        letter-spacing: 2.4px;
+    }
+
+    .section-button {
+        width: 140px !important;
+        height: 50px !important;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.50);
+        font-size: 10px !important;
+        line-height: normal;
+        letter-spacing: 3px;
+    }
+    
+    .section-button span svg {
+        width: 15px !important;
+        height: 15px !important;
+        flex-shrink: 0;
+    }
+
+    .arrow-down-icon svg {
+        width: 50px !important;
+        height: 50px !important;
+        flex-shrink: 0;
+    }
+
+
+    /* second page home styles  */
+
+    #nextId {
+        border: 1px solid green !important;
+    }
+    #up-coming {
+        /* width: 721px; */
+        height: 450px;
+        background: linear-gradient(
+            rgba(63, 62, 62, 0.5),
+            rgba(63, 62, 62, 0.849)
+          ),
+        url('/assets/img/contents/up-coming-events-bg.jpg'), lightgray 50% / cover no-repeat;
+        background-blend-mode: luminosity;
+        /* background-position: 10% 100%; */
+        /* background-size: cover !important; */
+        background-position: 40% 100% !important;
+        padding-top: 7rem !important;
+        padding-left: 4rem !important;
+        padding-right: 2rem !important;
+        /* border: 1px solid red !important */
+    }
+    
+    .content-section-title {
+        color: #FFF;
+        /* text-align: center; */
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 3px;
+    }
+    
+    .content-section-data {
+        color: #FFF;
+    
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3px;
+        padding-top: 2rem;
+    }
+
+     /* end second page home styles  */
 }
