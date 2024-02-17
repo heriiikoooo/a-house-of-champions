@@ -1,2 +1,79 @@
 
 
+.home-title-icon{
+    padding-right: 4rem;
+}
+
+.home-title-icon svg {
+    fill: #7B121E; 
+}
+.home-section-title {
+    font-family: "PoiretOne";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.7em;
+    color: #7B121E;
+}
+
+.home-section-subtitle {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* text-align: center; */
+    letter-spacing: 0.07em;
+    color: #000000;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: 0.25em;
+    padding-top: 2rem;
+}
+
+.home-content-text {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.18em;
+    color: #000000d3;
+    padding-top: 1.5rem;
+    padding-left: 0rem;
+}
+
+.custom-card {
+    /* padding-top: 1.5rem !important; */
+    /* padding-left: 3rem;
+    padding-right: 3rem; */
+}
+
+.box-item {
+    /* padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem #b4172928; */
+}
+
+.text-higlight {
+    color: #b41729;
+}
+
+
+/* START RESPONSIVE STYLE  */
+@media only screen and (max-width: 500px) {
+    .home-title-icon{
+        padding-right: 2rem;
+    }
+    
+    .home-section-title {
+      
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.7em;
+    }
+}
+/* END RESPONSIVE STYLE  */

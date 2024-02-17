@@ -1,0 +1,52 @@
+<div class="min-vh-100 max-vh-100 d-flex align-items-center">
+    <div class="w-100">
+        <div id="about-title" class="">
+            ABOUT AHOC CHURCH
+        </div>
+
+        <div class="d-flex flex-lg-row flex-column">
+            <div class="w-100 d-flex flex-column align-items-center" id="about-history">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel cursus massa. Pellentesque interdum commodo fermentum. Morbi scelerisque sagittis magna ac bibendum. Praesent vitae neque in leo vehicula rutrum. Cras sit amet lobortis libero. Cras quis scelerisque tellus. Nulla laoreet purus non lacus aliquam vulputate. Ut viverra placerat tortor, ac luctus mi venenatis vitae. Vestibulum sagittis libero enim, id porttitor nulla gravida at. Duis quis malesuada tellus, quis posuere nisi. Donec vitae dui at ex vestibulum eleifend non vel magna. Vestibulum tempus sed est et viverra. Nunc tempus eros vitae convallis accumsan. Mauris vestibulum eu felis ut aliquam. Sed dapibus quam eget feugiat faucibus.</p>
+            <!-- <p>Praesent metus magna, porttitor vel lectus at, faucibus varius tellus. Nunc sollicitudin orci nec dapibus tristique. Curabitur dapibus ante sit amet nulla consequat euismod. Curabitur tellus diam, gravida vel neque vel, finibus imperdiet nunc. Vestibulum rutrum eu felis vitae ullamcorper. Donec imperdiet, arcu vel commodo tincidunt, quam nibh tincidunt turpis, sit amet consequat ante lorem vitae lacus. Nullam ut nunc ante.</p> -->
+            </div>
+            <div class="w-100 row d-flex" id="about-data">
+                <div *ngFor="let item of items" class="col-xs-6 col-sm-6 col-md-6 about-data-items">
+                    <div class="d-flex">
+                        <div class="about-icon-div">
+                            <div class="about-icon d-flex align-items-center justify-content-center">
+                                <div [innerHtml]="getSVGImage(item.icon)"></div>
+                            </div>
+                        </div>
+                        <div class="about-data-div d-flex flex-column my-auto">
+                            <div *ngIf="item.title == 'Donations' " class="about-data-quantity">{{ item.data }}</div>
+                            <div *ngIf="item.title != 'Donations' " class="about-data-quantity">{{ item.data}}</div>
+                            <div class="about-data-title">{{ item.title }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-lg-row flex-column py-3">
+            <div class="w-100 p-5 mission-vision" id="about-mission">
+                <div class="d-flex box-item" style="min-height: 100%;">
+                    <app-mission></app-mission>
+                </div>
+               
+            </div>
+            <div class=" w-100 p-5 mission-vision" id="about-vision">
+                <div class="d-flex box-item" style="min-height: 100%;">
+                    <app-vision></app-vision>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center justify-content-center w-100 p-4 mb-5 pb-5" >
+            <div class="core-values-title">CORE VALUES</div>
+            <div class="core-values-subtitle">IMPACT</div>
+            <div style="height: 400px; width: 600px;">
+                <app-core-values-panner></app-core-values-panner>
+            </div>
+        </div>
+    </div>
+</div>

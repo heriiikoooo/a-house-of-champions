@@ -9,11 +9,15 @@ export class HomeComponent implements OnInit {
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
+  currentPos:any;
+
   ngOnInit(): void {
     const scrollPos = window.pageXOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     console.log(scrollPos)
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    // this.runScrollListener(scrollPos);
+
+    // window.scrollTo({ top: 0, behavior: 'smooth' });
+    // this.renderer.setStyle(this.el.nativeElement.querySelector('#ahoc-navbar'), 'position', 'fixed');
+    this.renderer.setStyle(this.el.nativeElement.querySelector('#ahoc-navbar'), 'display', 'none');
   }
 
   @HostListener('window:scroll', [])
@@ -72,6 +76,21 @@ export class HomeComponent implements OnInit {
         domElement.classList.add('fill-icons-black');
       })
     }
+
+    if(scrollPos > 700 ) { //if(scrollPos > 700 && (this.currentPos > scrollPos)) {
+      this.renderer.setStyle(this.el.nativeElement.querySelector('#ahoc-navbar'), 'display', 'block');
+    }
+    else{
+      this.renderer.setStyle(this.el.nativeElement.querySelector('#ahoc-navbar'), 'display', 'none');
+    }
+
+
+    if(scrollPos > 5060 ) { //if(scrollPos > 700 && (this.currentPos > scrollPos)) {
+      this.renderer.setStyle(this.el.nativeElement.querySelector('#ahoc-navbar'), 'display', 'none');
+    }
+
+
+    this.currentPos = scrollPos;
   }
 
   scrollToTarget(id:string) {

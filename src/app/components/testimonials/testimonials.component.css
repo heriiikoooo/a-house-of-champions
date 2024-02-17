@@ -1,0 +1,380 @@
+#testimonial-tittle {
+    z-index: 1;
+    /* position:absolute; */
+    /* top: 10rem;  */
+    /* margin: 0 auto; */
+    min-width: 100%;
+    text-align: center;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 3rem;
+}
+
+.carousel-control-prev{
+    width:5%;
+}
+.carousel-control-next{
+    width:5%;
+}
+.carousel-custom-bg {
+    /* background-size: cover; */
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 60% 90% !important;
+    /* height: 100% !important; */
+}
+
+.carousel-indicators li{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    font-size: 0;
+}
+
+.carousel-indicators li .active{
+    background-color: #FFF;
+}
+
+.content-item {
+    /* padding-top: 13rem; */
+    /* padding: 4rem 0rem; */
+}
+
+.carousel-person-div {
+    padding-top: 4rem;
+}
+
+.carousel-person {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 9px solid #7B121E;
+    box-shadow: 0px 4px 12.3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.26),rrgba(0, 0, 0, 0.61));
+}
+
+.carousel-person .qoute-icon {
+    position: absolute;
+    bottom: 0;
+    right: 1.5rem;
+    background-color: #7B121E;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    padding-top: 0.7rem;
+}
+
+.carousel-person .qoute-icon h4 {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.text-testimony {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    /* line-height: 25px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    letter-spacing: 0.09em;
+    /* width: 800px; */
+    max-width: 850px;
+    /* padding: 0 12rem; */
+    color: #FFFFFF;
+    /* border: 1px solid red; */
+    padding-top: 2.5em;
+}
+
+.testimony-person-name {
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+.testimony-person-position{
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+}
+
+
+
+/* START RESPONSIVE STYLE  */
+
+@media only screen and (max-width:800px) {
+    #testimonial-tittle {
+        top: 7rem;
+        font-size: 28px;
+        line-height: 49px;
+        letter-spacing: 0.20em;
+    }
+
+    .carousel-custom-bg {
+        background-position: 30% 10% !important;
+    }
+
+    .content-item {
+        /* padding-top: 7rem; */
+    }
+
+    .carousel-person {
+        width: 330px;
+        height: 330px;
+    }
+
+    .carousel-person .qoute-icon {
+        right: 2.2rem;
+        height: 52px;
+        width: 52px;
+        padding-top: 0.1rem;
+        padding-right: 0.1rem;
+    }
+    
+    .carousel-person .qoute-icon h4 {
+        font-size: 73px;
+    }
+
+    .carousel-control-prev{
+        width:10% ;
+    }
+    .carousel-control-next{
+        width:10%;
+    }
+    .text-testimony {
+        font-size: 15px;
+        letter-spacing: 0.02em;
+        line-height: 23px !important;
+        padding: 0 3rem;
+        padding-top: 2.5rem !important;
+    }
+    
+    .testimony-person-name {
+        font-size: 18px;
+    }
+    
+    .testimony-person-position{
+        font-size: 15px;
+        margin-top: -0.03rem !important;
+    }
+
+    .carousel-indicators li{
+        height: 13px;
+        width: 13px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #testimonial-tittle {
+        top: 7rem;
+        font-size: 27px;
+        line-height: 49px;
+        letter-spacing: 0.20em;
+    }
+
+    .carousel-custom-bg {
+        background-position: 30% 10% !important;
+    }
+
+    .content-item {
+        /* padding-top: 7rem; */
+    }
+
+    .carousel-person {
+        width: 320px;
+        height: 320px;
+    }
+
+    .carousel-person .qoute-icon {
+        right: 2.2rem;
+        height: 52px;
+        width: 52px;
+        padding-top: 0.1rem;
+        padding-right: 0.1rem;
+    }
+    
+    .carousel-person .qoute-icon h4 {
+        font-size: 73px;
+    }
+
+    .carousel-control-prev{
+        width:10% ;
+    }
+    .carousel-control-next{
+        width:10%;
+    }
+    .text-testimony {
+        font-size: 15px;
+        letter-spacing: 0.02em;
+        line-height: 23px !important;
+        padding: 0 4rem;
+        padding-top: 2.5rem !important;
+    }
+    
+    .testimony-person-name {
+        font-size: 18px;
+    }
+    
+    .testimony-person-position{
+        font-size: 15px;
+        margin-top: -0.03rem !important;
+    }
+
+    .carousel-indicators li{
+        height: 13px;
+        width: 13px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #testimonial-tittle {
+        top: 7rem;
+        font-size: 23px;
+        line-height: 49px;
+        letter-spacing: 0.20em;
+    }
+
+    .carousel-custom-bg {
+        background-position: 30% 10% !important;
+    }
+
+    .content-item {
+        /* padding-top: 7rem; */
+    }
+
+    .carousel-person-div {
+        padding-top: 2rem !important;
+    }
+
+    .carousel-person {
+        width: 290px;
+        height: 290px;
+    }
+
+    .carousel-person .qoute-icon {
+        right: 1.8rem;
+        height: 52px;
+        width: 52px;
+        padding-top: 0.1rem;
+        padding-right: 0.1rem;
+    }
+    
+    .carousel-person .qoute-icon h4 {
+        font-size: 73px;
+    }
+
+    .carousel-control-prev{
+        width:10% ;
+    }
+    .carousel-control-next{
+        width:10%;
+    }
+    .text-testimony {
+        font-size: 15px;
+        letter-spacing: 0.02em;
+        line-height: 23px !important;
+        padding: 0 6rem;
+        padding-top: 2.5rem !important;
+    }
+    
+    .testimony-person-name {
+        font-size: 18px;
+    }
+    
+    .testimony-person-position{
+        font-size: 15px;
+        margin-top: -0.03rem !important;
+    }
+
+    .carousel-indicators li{
+        height: 13px;
+        width: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    #testimonial-tittle {
+        font-size: 19px;
+        letter-spacing: 0.20em;
+    }
+
+    .carousel-custom-bg {
+        background-position: 30% 10% !important;
+    }
+
+    .carousel-person-div {
+        padding-top: 2rem !important;
+    }
+
+    .carousel-person {
+        width: 250px;
+        height: 250px;
+    }
+
+    .carousel-person .qoute-icon {
+        right: 1rem;
+        height: 50px;
+        width: 50px;
+        padding-top: 0.1rem;
+        padding-right: 0.2rem;
+    }
+    
+    .carousel-person .qoute-icon h4 {
+        font-size: 70px;
+    }
+
+    .carousel-control-prev{
+        width:10% ;
+    }
+    .carousel-control-next{
+        width:10%;
+    }
+    .text-testimony {
+        font-size: 13px;
+        letter-spacing: 0.02em;
+        padding-top: 1.5rem !important;
+        width: 500px;
+    }
+    
+    .testimony-person-name {
+        font-size: 15px;
+    }
+    
+    .testimony-person-position{
+        font-size: 12px;
+        margin-top: -0.03rem !important;
+    }
+
+    .carousel-indicators li{
+        height: 10px;
+        width: 10px;
+    }
+}
+/* END RESPONSIVE STYLE  */

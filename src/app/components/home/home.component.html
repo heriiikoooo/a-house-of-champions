@@ -1,10 +1,8 @@
-<div>
-<!-- <div id="test" style="overflow: hidden !important;"></div> -->
 <div class="min-vh-100 d-flex align-items-center justify-content-center w-100" id="main-div" style="overflow: hidden !important">
-    <app-header id="ahoc-navbar" style="position: absolute; top:0; width: 100%;"></app-header>
+    <app-header id="ahoc-navbar" style="position: absolute; top:0; width: 100%; z-index: 9 !important;"></app-header>
     
     <div class="center-section">
-        <div class="mt-4 text-center" id="tagline">Helping Grow Your Faith</div>
+        <div class="mt-4 text-center" id="tagline">Helping You To Grow Your Faith</div>
         <div class="pt-4 text-center" id="tagline-sub">Sub Text Here</div>
         <div class="d-flex justify-content-center pt-5">
             <div role="button" class="d-flex align-items-center justify-content-center section-button mx-1 ">NEW HERE</div>
@@ -18,7 +16,7 @@
                  LIVE STREAM
             </div>
         </div>
-        <div (click)="scrollToTarget('nextId')" role="button" class="arrow-down-icon text-center pt-5">
+        <div (click)="scrollToTarget('theme-div-wrapper')" role="button" class="arrow-down-icon text-center pt-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 64 64" fill="none">
                 <circle cx="32" cy="32" r="32" fill="white" fill-opacity="0.5"/>
                 <path d="M31.2929 45.7071C31.6834 46.0976 32.3166 46.0976 32.7071 45.7071L39.0711 39.3431C39.4616 38.9526 39.4616 38.3195 39.0711 37.9289C38.6805 37.5384 38.0474 37.5384 37.6569 37.9289L32 43.5858L26.3431 37.9289C25.9526 37.5384 25.3195 37.5384 24.9289 37.9289C24.5384 38.3195 24.5384 38.9526 24.9289 39.3431L31.2929 45.7071ZM31 18L31 45L33 45L33 18L31 18Z" fill="white"/>
@@ -26,21 +24,39 @@
         </div>
     </div>
 </div>
-<div id="nextId" class="min-vh-100 border " style="z-index: 9 !important; background-color: white; margin: 0 !important;">
-    <!-- <div> Next Page Here...</div> -->
-    <div class="row w-100" style="margin: 0 !important;">
-        <div id="up-coming" class="col-sm-12 col-md-6 col-lg-6 ">
-            <div class=""> 
+
+<!-- <div id="nextId" class="min-vh-100" style="z-index: 9 !important; background-color: white;">
+    <div class="row w-100 " style="margin: 0 !important;">
+        <div id="up-coming" class="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
+            <div class="w-75"> 
                 <div class="content-section-title">
                     UPCOMING EVENTS
                 </div>
            
-            <div class="content-section-data">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae mi eget nisl bibendum dictum nec ut massa. Maecenas porttitor id urna quis ultricies
-            </div>
+                <div class="content-section-data">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae mi eget nisl bibendum dictum nec ut massa. Maecenas porttitor id urna quis ultricies
+                </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">join event</div>
+        <div id="join-event" class="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
+            <div class="w-75">
+                <div id="join-event-btn" class="d-flex align-items-center justify-content-center">
+                    Join Our Event
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-</div>
+    <div class="container d-flex align-items-center justify-content-center py-5">
+        <div id="verse-content" class="row w-100 my-5">
+            "16 For God so loved the world, that He gave His only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life."
+            <div class="verse" class="text-center mt-5"> — John 3:16 KJV </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div id="nextId" class="min-vh-100 ">
+</div> -->
+<app-theme-2024></app-theme-2024>
+<app-services></app-services>
+<app-about></app-about>
+<app-testimonials></app-testimonials>

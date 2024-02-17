@@ -1,0 +1,42 @@
+<div class="custom-slider-container">
+    <div 
+        class="custom-slider-item" 
+        *ngFor="let image of images; let i = index;"
+        [ngClass]='{
+            "custom-slider-img-selected": i  == selectedIndex,
+            "custom-slider-img-prev-behind_1": i  == (selectedIndex - 2),
+            "custom-slider-img-prev-behind_2": i  == (selectedIndex - 3),
+            "custom-slider-img-prev-behind_3": i  == (selectedIndex - 4),
+            "custom-slider-img-prev-behind_4": i  == (selectedIndex - 5),
+            "custom-slider-img-next-behind_1": i  == (selectedIndex + 2),
+            "custom-slider-img-next-behind_2": i  == (selectedIndex + 3),
+            "custom-slider-img-next-behind_3": i  == (selectedIndex + 4),
+            "custom-slider-img-next-behind_4": i  == (selectedIndex + 5),
+            "custom-slider-img-prev": i  == (selectedIndex - 1),
+            "custom-slider-img-next": i  == (selectedIndex + 1),
+            
+            "custom-slider-img-hide-left": i  < (selectedIndex - 1),
+            "custom-slider-img-hide-right": i  < (selectedIndex + 1)
+        }'
+    >
+
+        <!-- <img 
+            [src]="image.src" 
+            [alt]="" 
+            class="custom-slider-img"
+            (panRight)="showPrev(i)"
+            (panLeft)="showNext(i)"
+        > -->
+    <div class="custom-slider-img "
+    (panRight)="showPrev(i)"
+    (panLeft)="showNext(i)"
+    style="background-color: white;">
+    <div class="d-flex flex-column border inner-items" style="min-height: 100%; background-color: white;">
+        <div class="item-title">
+            <div [innerHtml]="readHTML(image.title)"></div>
+        <div class="item-content">{{ image.content }}</div>
+    </div>
+        
+    </div>
+    </div>
+</div>

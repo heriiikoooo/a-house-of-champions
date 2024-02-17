@@ -5,7 +5,7 @@
     rgba(0, 0, 0, 0.616),
     rgba(0, 0, 0, 0.877)
   ),
-  url('/assets/img/main-bg.jpg'), lightgray 0% / cover no-repeat;
+  url('src/assets/img/main-bg.jpg'), lightgray 0% / cover no-repeat;
 
   /* filter: blur(8px);
   -webkit-filter: blur(8px); */
@@ -30,7 +30,7 @@
       rgba(0, 0, 0, 0.726),
       rgba(0, 0, 0, 0.555)
     ),
-    url('/assets/img/main-bg-org.png'), lightgray 0% / cover no-repeat  !important;
+    url('src/assets/img/main-bg-org.png'), lightgray 0% / cover no-repeat  !important;
   
     /* filter: blur(5px);
     -webkit-filter: blur(5px); */
@@ -152,14 +152,13 @@
         rgba(63, 62, 62, 0.5),
         rgba(63, 62, 62, 0.849)
       ),
-    url('/assets/img/contents/up-coming-events-bg.jpg'), lightgray 50% / cover no-repeat;
+    url('src/assets/img/contents/up-coming-events-bg.jpg'), lightgray 50% / cover no-repeat;
     background-blend-mode: luminosity;
     
-    /* background-size: cover; */
-    background-position: 20% 100%;
-    padding-top: 7rem;
-    padding-left: 20rem;
-    padding-right: 10rem ;
+    background-position: 40% 100%;
+    /* padding-top: 7rem;
+    padding-left: 16rem;
+    padding-right: 10rem ; */
 }
 
 .content-section-title {
@@ -184,3 +183,57 @@
     letter-spacing: 3px;
     padding-top: 2rem;
 }
+
+#join-event {
+    height: 450px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.733),
+        rgba(0, 0, 0, 0.164)
+      ),
+    url('src/assets/img/contents/join-events.png'), lightgray 50% / cover no-repeat;
+    background-blend-mode: luminosity;
+    
+    background-size: cover !important;
+    background-position: 40% 100%;
+    /* padding-top: 7rem;
+    padding-left: 16rem;
+    padding-right: 10rem ; */
+}
+
+#join-event-btn {
+    width: 173px;
+    height: 46px;
+    border-radius: 5px;
+    background: rgba(217, 217, 217, 0.50);
+    color: #FFF;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+#verse-content {
+    color: #000;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    /* padding: 2rem 5rem; */
+}
+
+/* #verse {
+    color: #000;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.2px;
+} */

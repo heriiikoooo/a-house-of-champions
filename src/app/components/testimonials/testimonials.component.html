@@ -1,0 +1,58 @@
+<div class="min-vh-100 max-vh-100">
+    <div id="testimonyControls" class="carousel slide min-vh-100 max-vh-100" data-bs-ride="carousel"  style="position: relative;">
+        <!-- <div id="testimonial-tittle">INSPIRATIONAL TESTIMONY</div> -->
+        <ol class="carousel-indicators" style="z-index: 9;">
+            <li data-bs-target="#testimonyControls" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#testimonyControls" data-bs-slide-to="1"></li>
+            <li data-bs-target="#testimonyControls" data-bs-slide-to="2"></li>
+            <li data-bs-target="#testimonyControls" data-bs-slide-to="3"></li>
+            <li data-bs-target="#testimonyControls" data-bs-slide-to="4"></li>
+            <li data-bs-target="#testimonyControls" data-bs-slide-to="5"></li>
+            <li data-bs-target="#testimonyControls" data-bs-slide-to="6"></li>
+          </ol>
+          
+        <div class="carousel-inner min-vh-100 max-vh-100">
+            
+        <!-- <div *ngFor="let slidex of slides; let i = index; first as isFirst">
+            {{ i }} -->
+          <div *ngFor="let slide of slides; let i = index; first as isFirst" class="min-vh-100 max-vh-100 carousel-custom-bg" [ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' " [ngStyle]="{ 'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.671)), url('+slide.background+')' }">
+            <!-- <div class="d-flex align-items-center justify-content-center"> -->
+              <div class="min-vh-100 d-flex flex-column align-items-center justify-content-center content-item">
+                <div id="testimonial-tittle">INSPIRATIONAL TESTIMONY</div>
+                <div class="d-flex align-items-center justify-content-center carousel-person-div">
+                  <div class="carousel-person" style="position: relative; " [ngStyle]="{ 'background-image' : 'url('+slide.picture+')' }">
+                    <div class="d-flex align-items-center justify-content-center qoute-icon"><h4 class="pt-5">“</h4></div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="text-testimony">
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                  </div>
+                </div>
+                <div class="testimony-person-name pt-4">{{ slide.name }}</div>
+                <div class="testimony-person-position pt-0 pb-5">{{ slide.position }}</div>
+              </div>
+            <!-- </div> -->
+          </div>
+        <!-- </div> -->
+          <!-- <div class="carousel-item min-vh-100 carousel-custom-bg" style="background: url('assets/img/contents/testimony/bg/pat_BG.jpg');">
+            <div>JEAN</div>
+          </div>
+          <div class="carousel-item min-vh-100 carousel-custom-bg" style="background: url('assets/img/contents/testimony/bg/pat_BG.jpg');">
+            <div>Acopiado</div>
+          </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonyControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-bar-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.854 3.646a.5.5 0 0 1 0 .708L8.207 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0M4.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5"/>
+          </svg> -->
+          
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonyControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>

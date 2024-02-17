@@ -26,8 +26,18 @@
     margin: 0 50px;
   } */
 
+  #ahoc-navbar{
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .navbar {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
   .brand-title {
-    font-size: 24px;
+    font-size: 28px;
     font-family: "PoiretOne";
     line-height: 30px;
     letter-spacing: 12.48px;
@@ -41,10 +51,11 @@
     font-family: "MontserratAlternates";
     /* color: rgba(0, 0, 0, 0.685); */
     color: #FFF;
-    line-height: 17px;
+    line-height: normal;
     letter-spacing: 0.03rem;
     /* font-weight: 600; */
     white-space: nowrap;
+    opacity: 0.6;
   }
 
   .header-social-icons {
@@ -101,6 +112,7 @@
 
   .nav-item .nav-link {
     color: #fffffff1;
+    color: #7B121E;
   }
 
   .toolbar #twitter-logo {
