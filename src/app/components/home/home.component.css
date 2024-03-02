@@ -237,3 +237,169 @@
     line-height: normal;
     letter-spacing: 3.2px;
 } */
+
+.scrollheader {
+    -webkit-transition: all 1s !important;
+    -moz-transition: all 1s !important;
+    transition: all 1s !important;
+    position: fixed !important;
+    /* transform: translateY(0) !important; */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+    .section-title {
+        font-size: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .section-title {
+        font-size: 4rem !important;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .section-title {
+        font-size: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .section-title {
+        font-size: 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-title {
+        font-size: 3.7rem !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .section-title {
+        font-size: 3.5rem !important;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .section-title {
+        font-size: 3.2rem !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+    .section-title {
+        font-size: 2.8rem !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .section-title {
+        font-size: 2.5rem !important;
+    }
+
+    #main-div {
+        background-position: 45% 50% !important;
+    }
+
+    #tagline {
+        font-size: 38px !important;
+        line-height: normal;
+        letter-spacing: 6.4px;
+    }
+
+    #tagline-sub {
+        font-size: 18px !important;
+        line-height: normal;
+        letter-spacing: 2.4px;
+    }
+
+    .section-button {
+        width: 140px !important;
+        height: 50px !important;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.50);
+        font-size: 10px !important;
+        line-height: normal;
+        letter-spacing: 3px;
+    }
+    
+    .section-button span svg {
+        width: 15px !important;
+        height: 15px !important;
+        flex-shrink: 0;
+    }
+
+    .arrow-down-icon svg {
+        width: 50px !important;
+        height: 50px !important;
+        flex-shrink: 0;
+    }
+
+
+    #nextId {
+        border: 1px solid green !important;
+    }
+    #up-coming {
+        height: 450px;
+        background: linear-gradient(
+            rgba(63, 62, 62, 0.5),
+            rgba(63, 62, 62, 0.849)
+          ),
+        url('src/assets/img/contents/up-coming-events-bg.jpg'), lightgray 50% / cover no-repeat;
+        background-blend-mode: luminosity;
+        background-position: 40% 100% !important;
+        padding-top: 7rem !important;
+        padding-left: 4rem !important;
+        padding-right: 2rem !important;
+    }
+    
+    .content-section-title {
+        color: #FFF;
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 3px;
+    }
+    
+    .content-section-data {
+        color: #FFF;
+    
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3px;
+        padding-top: 2rem;
+    }
+}

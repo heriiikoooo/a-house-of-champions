@@ -129,3 +129,228 @@
   .toolbar #youtube-logo:hover {
     opacity: 0.8;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+  .responsive-img img{
+    height: 280px !important;
+    width: 100% !important;
+  }
+
+  .section-title {
+      font-size: 4rem !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .responsive-img img{
+      height: 250px !important;
+      width: 100% !important;
+  }
+
+  .section-title {
+      font-size: 4rem !important;
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  .responsive-img img{
+    height: 200px !important;
+    width: 100% !important;
+  }
+
+  .section-title {
+      font-size: 4rem !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .responsive-img img{
+    height: 170px !important;
+    width: 100% !important;
+  }
+
+  .section-title {
+      font-size: 4rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-title {
+      font-size: 3.7rem !important;
+  }
+
+  .toolbar img{
+      width: 90px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .section-title {
+      font-size: 3.5rem !important;
+  }
+
+  .toolbar img{
+      width: 80px;
+  }
+
+  .brand-title {
+      padding-left: 3px !important;
+      font-size: 19px !important;
+      line-height: 19px !important;
+      letter-spacing: 0.03rem !important;
+    }
+  
+  .brand-qoute {
+      padding-left: 3px !important;
+      font-size: 15px !important;
+      letter-spacing: 0.03rem !important
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-title {
+      font-size: 3.2rem !important;
+  }
+
+  .toolbar img{
+      width: 70px;
+  }
+
+  .brand-title {
+      padding-left: 3px !important;
+      font-size: 18px !important;
+      line-height: 18px !important;
+      letter-spacing: 0.03rem !important;
+    }
+  
+  .brand-qoute {
+      padding-left: 3px !important;
+      font-size: 14px !important;
+      letter-spacing: 0.03rem !important
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .section-title {
+      font-size: 2.8rem !important;
+  }
+
+  .toolbar {
+      height: 77px !important;
+  }
+
+  .toolbar img{
+      width: 60px;
+  }
+
+  .brand-title {
+      padding-left: 3px !important;
+      font-size: 17px !important;
+      line-height: 17px !important;
+      letter-spacing: 0.03rem !important;
+    }
+  
+  .brand-qoute {
+      padding-left: 3px !important;
+      font-size: 11px !important;
+      letter-spacing: 0.03rem !important
+  }
+
+  /* #toggler-icon {
+      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  } */
+
+  .header-social-icons {
+      padding-right: 0 !important;
+    }
+  .header-social-icons .items {
+      padding: 0 6px !important;
+  }
+
+  .header-social-icons .items svg {
+      width: 16px !important;
+      height: 16px !important;
+      flex-shrink: 0;
+  }
+
+  .navbar-toggler-icon {
+      width: 21px !important;
+      height: 21px !important;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .responsive-img img{
+    height: 170px !important;
+    width: 100% !important;
+  }
+
+  .section-title {
+      font-size: 2.5rem !important;
+  }
+
+  .toolbar {
+      height: 48px !important;
+  }
+
+  .toolbar img{
+      width: 50px;
+  }
+
+  #main-div {
+      background-position: 45% 50% !important;
+  }
+
+  .brand-title {
+      padding-left: 3px !important;
+      font-size: 17px !important;
+      line-height: 17px !important;
+      letter-spacing: 0.4rem !important;
+      /* color:red !important; */
+  }
+  
+  .brand-qoute {
+      padding-left: 3px !important;
+      font-size: 10px !important;
+      letter-spacing: 0.04rem !important;
+      /* color:red !important; */
+  }
+
+  .header-social-icons {
+      padding-right: 0 !important;
+    }
+  .header-social-icons .items {
+      padding: 0 8px !important;
+  }
+
+  .header-social-icons .items svg {
+      width: 15px !important;
+      height: 15px !important;
+      flex-shrink: 0;
+  }
+
+  .navbar-toggler-icon {
+      /* border:1px solid red !important; */
+      width: 20px !important;
+      height: 20px !important;
+  }
+
+  .container, .toolbar {
+      padding-left: 4px !important;
+      padding-right: 0 !important;
+  }
+}

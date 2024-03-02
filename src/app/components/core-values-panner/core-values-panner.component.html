@@ -31,12 +31,12 @@
     (panRight)="showPrev(i)"
     (panLeft)="showNext(i)"
     style="background-color: white;">
-    <div class="d-flex flex-column border inner-items" style="min-height: 100%; background-color: white;">
+    <div class="d-flex align-items-start flex-column inner-items" style="height: 100%; background-color: white;">
         <div class="item-title">
             <div [innerHtml]="readHTML(image.title)"></div>
-        <div class="item-content">{{ image.content }}</div>
-    </div>
-        
+        </div>
+        <div class="item-content global-contents">{{ image.content }}</div>
+   
     </div>
     </div>
 </div>

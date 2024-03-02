@@ -1,0 +1,76 @@
+<div class="min-vh-100 max-vh-100 d-flex align-items-center container">
+    <div class="pb-4">
+        <div class="global-section-title ">
+            Topics
+        </div>
+
+        <div class="w-100">
+            <div class="d-flex latest-topic-div">
+                <div class="latest-topic-img" 
+                    [ngStyle]="{ 'background-image' : 'url('+topics[0].img+')' }">
+                </div>
+
+                <div class="latest-topic-details d-flex align-items-start flex-column">
+                    <div class="details-headline w-100 d-flex flex-row justify-content-between">
+                        <div class="global-sub-titles"> #Latest topic</div> 
+                        <div class="global-date">| {{ topics[0].date }}</div>
+                    </div>
+                    <div class="details-title"> {{ topics[0].title }}</div>
+                    <div class="details-preacher-name"> ~{{ topics[0].preacher }}</div>
+                    <div class="global-contents d-flex align-items-center justify-content-center">
+                        {{ topics[0].highlights }}
+                    </div>
+
+                    <div class="mt-auto w-100">
+                        <div class="d-flex flex-row details-button-div">
+                            <div class="px-2 button-items w-100"> 
+                                <a target="_blank" href="{{ topics[0].link}}" class="watch-topic d-flex align-items-center justify-content-center">
+                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/>
+                                    </svg>
+                                    WATCH FULL TOPIC
+                                </a> 
+                            </div>
+                            <!-- <div class="px-2 button-items w-100"> 
+                                <div role="button" class="watch-topic d-flex align-items-center justify-content-center">
+                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/>
+                                    </svg>
+                                    WATCH FULL TOPIC
+                                </div> 
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 other-topic-wrapper">
+           <div class="w-100 other-topic">Other Topics</div>
+           <div class="progress-row row">
+            <div #progressBar class="progress-bar"></div>
+           </div>
+           <div class="w-100 d-flex flex-row topic-overflow-wrapper">
+            <button class="handle left-handle" >
+                <div class="text">&#8249;</div>
+              </button>
+
+              <div #slider class="slider">
+                <div *ngFor="let topic of topics" class="slider-item">
+                    <div class="w-100 h-100 slider-wrapper">
+                        <a target="_blank" href="{{ topic.link }}">
+                            <div class="item-img" [ngStyle]="{ 'background-image' : 'url('+topic.img+')' }">
+                                <!-- <div class="item-img-date">01 | 01 | 2024</div> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+              </div>
+            <button class="handle right-handle" >
+                <div class="text">&#8250;</div>
+            </button>
+           </div>
+
+        </div>
+    </div>
+</div>

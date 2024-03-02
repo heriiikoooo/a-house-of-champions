@@ -1,37 +1,24 @@
-#about-title {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 87px;
-    text-align: center;
-    letter-spacing: 0.1em;
+/* overrride  */
+.global-sub-titles{
+    /* text-wrap: nowrap; */
+    font-size: 20px;
+    text-align: left;
     color: #000000;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-    /* border: 1px solid red;; */
+    font-weight: 300;
 }
 
-#about-history{
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    color: #000000;
-    padding: 1rem 2rem;
-    padding-left: 3rem;
+.global-contents{
+    text-align: justify;
 }
+
 
 #about-data {
     padding: 1rem;
 }
 
 .about-data-items {
-    padding: 1rem 2rem;
-    padding-right: 0.1rem;
+    /* padding: 1rem 2rem;
+    padding-right: 0.1rem; */
 }
 
 .about-icon-div{
@@ -79,22 +66,10 @@
     border-radius: 10px;
     box-shadow: 0.8rem 0.8rem 5rem #b4172913;
     height: 100% !important;
-    /* border-top: 2px solid #7B121E; */
-    /* border-left: 2px solid #7b121e9f;
-    border-right: 1px solid #7B121E;
-    border-bottom: 1px solid #7B121E; */
 }
 
 
-.core-values-title {
-    font-family: "PoiretOne";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 37px;
-    line-height: 50px;
-    text-align: center;
-    letter-spacing: 0.7em;
-    color: #7B121E;
+.global-about-item-title {
     padding-top: 3rem;
 }
 
@@ -111,35 +86,79 @@
     padding-bottom: 2.5rem;
 }
 
-
-
+.core-values-wrapper {
+    height: 400px; 
+    width: 600px; 
+    /* overflow: hidden; */
+}
 
 
 
 
 /* START RESPONSIVE STYLE  */
-@media only screen and (max-width: 500px) {
-    #about-title {
-        font-size: 28px;
-        line-height: 35px;
-        letter-spacing: 0.16em;
-        padding-bottom: 1rem !important;
-        padding-top: 3.2rem !important;
-        /* border: 1px solid red;; */
-    }
-
-
-    #about-history{
-        font-size: 15px;
-        line-height: 19px;
-        text-align: left;
-        letter-spacing: 0.08em;
-        padding: 0.7rem 1rem;
-    }
-
+@media only screen and (max-width: 1020px) {
     #about-data {
-        padding: 0.7rem 1rem;
-        padding-top: 0.1em;
+        padding: 0.9rem 1rem;
+        padding-top: 0.2em;
+    }
+
+    .about-data-items {
+        padding: 1rem 1rem;
+        width: 50% !important;
+    }
+
+    .about-icon {
+        width: 70px;
+        height: 70px;
+        background: #D9D9D9;
+        border-radius: 50%;
+    }
+    
+    ::ng-deep .about-svg-icons {
+        height: 40px !important;
+        width: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #about-data {
+        padding: 0.85rem 1rem;
+        padding-top: 0.2em;
+    }
+
+    .about-data-items {
+        padding: 1rem 1rem;
+        width: 50% !important;
+    }
+
+    .about-icon {
+        width: 60px;
+        height: 60px;
+        background: #D9D9D9;
+        border-radius: 50%;
+    }
+    
+    ::ng-deep .about-svg-icons {
+        height: 35px !important;
+        width: 35px !important;
+    }
+
+    .about-data-div {
+        padding-left: 1rem;
+    }
+
+    .about-data-quantity {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.15em;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    #about-data {
+        padding: 0.8rem 1rem;
+        padding-top: 0.15em;
     }
 
     .about-data-items {
@@ -168,24 +187,65 @@
         line-height: 20px;
         letter-spacing: 0.15em;
     }
-    
-    .about-data-title {
-        font-size: 14px;
+
+    .core-values-wrapper {
+        height: 400px; 
+        width: 100%; 
+        /* overflow: hidden; */
+        padding: 2rem 0rem;
+    }
+
+    .global-about-item-title {
+        padding-top: 1rem;
+    }
+
+    /* .core-values-subtitle {
+        text-align: center !important;
+        font-size: 15px;
         line-height: 20px;
-        letter-spacing: 0.15em;
+        letter-spacing: 2em;
+        padding-top: 1.2rem;
+        padding-bottom: 2rem;
+    } */
+}
+
+@media only screen and (max-width: 500px) {
+
+    #about-data {
+        padding: 0.7rem 1rem;
+        padding-top: 0.1em;
+    }
+
+   
+    
+    .global-sub-titles {
+        font-size: 14px;
     }
 
 
     .mission-vision {
         padding: 1rem !important;
         padding-bottom: 2rem !important;
-        /* border: 2px solid red !important; */
     }
 
     .box-item {
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
         border-radius: 10px;
-        
     }
+
+
+    .global-about-item-title {
+        padding-top: 1rem;
+    }
+
+    .core-values-subtitle {
+        text-align: center !important;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 2em;
+        padding-top: 1.2rem;
+        padding-bottom: 2rem;
+    }
+    /* */
 }
 /* END RESPONSIVE STYLE  */

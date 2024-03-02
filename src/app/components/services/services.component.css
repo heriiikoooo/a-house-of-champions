@@ -19,17 +19,23 @@
     width: 65%;
 }
 
-.service-item-title {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: right;
-    letter-spacing: 0.2em;
-    color: #000000;
+/* override */
+.global-sub-titles{
     text-wrap: nowrap;
+    text-align: right;
+    color: #000000;
+    font-weight: 400;
 }
+
+.global-contents{
+    text-align: right;
+    padding-top: 0.5rem;
+}
+
+.global-date{
+    text-align: right;
+}
+
 
 .service-item-date {
     font-family: 'Nunito Sans';
@@ -76,6 +82,8 @@
 
 
 
+
+
 /* START RESPONSIVE STYLE  */
     @media only screen and (max-width: 500px) {
         #service-title {
@@ -86,12 +94,6 @@
             padding-top: 3.2rem !important;
         }
 
-        .service-item-title {
-            font-size: 17px;
-            line-height: 19px;
-            letter-spacing: 0.2em;
-        }
-        
         .service-item-date {
             font-size: 12px;
             letter-spacing: 0.15em;
@@ -120,5 +122,5 @@
             border-radius: 50%;
             background: #D9D9D9;
         }
-    }
+}
 /* END RESPONSIVE STYLE  */

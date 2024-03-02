@@ -33,14 +33,14 @@
     padding-top: 2rem;
 }
 
-.home-content-text {
-    font-family: 'Nunito Sans';
+.global-contents {
+    /* font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.18em;
-    color: #000000d3;
+    color: #000000d3; */
     padding-top: 1.5rem;
     padding-left: 0rem;
 }
@@ -102,13 +102,13 @@
     }
 
     .home-content-text {
-        font-family: 'Nunito Sans';
+        /* font-family: 'Nunito Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 13.5px;
         line-height: 24px;
         letter-spacing: 0.15em;
-        color: #000000d3;
+        color: #000000d3; */
         padding-top: 1.5rem;
         padding-left: 0rem;
     }

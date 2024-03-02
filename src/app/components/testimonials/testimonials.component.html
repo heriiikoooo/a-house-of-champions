@@ -25,8 +25,23 @@
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <div class="text-testimony">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                  <div class="text-testimony global-contents">
+          <!-- <div class="carousel-item min-vh-100 carousel-custom-bg" style="background: url('assets/img/contents/testimony/bg/pat_BG.jpg');"> -->
+                      <div [innerHTML]="slide.testimony | truncate:['500', '...']"> </div>
+                      <div class="d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center" role="button" style="border-bottom: 1px solid #FFFFFF;" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="showFullTestimony($event, i)">
+                          <span class="see-full-button">
+                            See full testimony 
+                            
+                          </span>
+                          <svg class="svg-icon-right d-flex align-items-center" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 34 34" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 1c-6.071 0-11 4.929-11 11s4.929 11 11 11 11-4.929 11-11-4.929-11-11-11zm4.828 11.5l-4.608 3.763.679.737 6.101-5-6.112-5-.666.753 4.604 3.747h-11.826v1h11.828z"/>
+                          </svg>
+                        </div>
+                       
+                      </div>
+                      
+                     <!-- <span> {{ slide.testimony | truncate:['500', '...']}} <span class="see-full-button" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="showFullTestimony(i)">See full testimony</span></span> -->
+                    <!--A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. -->
                   </div>
                 </div>
                 <div class="testimony-person-name pt-4">{{ slide.name }}</div>
@@ -55,4 +70,30 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+</div>
+
+<!-- Modal -->
+<div class="modal modal-md modal-lg fade px-4" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div *ngIf="isOpen" class="modal-content">
+      <div class="modal-header d-flex flex-row justify-content-center" [ngStyle]="{ 'background-image' : 'linear-gradient(rgba(255, 255, 255, 0.466),rgba(7, 7, 7, 0.63)), url('+testimony.background+')' }">
+        <div class="d-flex align-items-center justify-content-center image-div">
+          <div class="testimony-image"  [ngStyle]="{ 'background-image' : 'url('+testimony.picture+')' }"></div>
+        </div>
+        <div class="d-flex align-items-center details-div">
+          <div class="testimony-name">{{ testimony.name }}</div>
+          </div>
+
+       
+        <div class="modal-close-btn">
+          <button #closeBTN type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+      </div>
+      <div class="modal-body">
+        <div class="">
+          <div [innerHTML]="testimony.testimony" class="testimony-content global-contents"></div>
+      </div>
+    </div>
+  </div>
 </div>
