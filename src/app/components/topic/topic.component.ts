@@ -17,19 +17,18 @@ export class TopicComponent implements OnInit, AfterViewInit {
 
   topics = [
     {
-      img: 'assets/img/contents/topic/topic-img.png',
+      image_url: 'assets/img/contents/topic/topic-img.png',
       title: 'Lord is Sufficient for all of our needs',
       preacher: 'Pastor Mark Joseph Marquez',
       date: 'January 01, 2024',
       highlights: `A small river named Duden flows by their place and supplies it with the necessary regelialia. 
       It is a paradisematic country, in which roasted parts of sentences fly into your mouth. 
       Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-      
       `,
-      link: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
+      link_url: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
     },
     {
-      img: 'assets/img/contents/topic/topic-img_2.jpg',
+      image_url: 'assets/img/contents/topic/topic-img_2.jpg',
       title: 'Lord is Sufficient for all of our needs',
       preacher: 'Pastor Mark Joseph Marquez',
       date: 'January 01, 2024',
@@ -38,10 +37,10 @@ export class TopicComponent implements OnInit, AfterViewInit {
       Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
       
       `,
-      link: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
+      link_url: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
     },
     {
-      img: 'assets/img/contents/topic/topic-img_2.jpg',
+      image_url: 'assets/img/contents/topic/topic-img_2.jpg',
       title: 'Lord is Sufficient for all of our needs',
       preacher: 'Pastor Mark Joseph Marquez',
       date: 'January 01, 2024',
@@ -50,10 +49,10 @@ export class TopicComponent implements OnInit, AfterViewInit {
       Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
       
       `,
-      link: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
+      link_url: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
     },
     {
-      img: 'assets/img/contents/topic/topic-img_2.jpg',
+      image_url: 'assets/img/contents/topic/topic-img_2.jpg',
       title: 'Lord is Sufficient for all of our needs',
       preacher: 'Pastor Mark Joseph Marquez',
       date: 'January 01, 2024',
@@ -62,10 +61,10 @@ export class TopicComponent implements OnInit, AfterViewInit {
       Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
       
       `,
-      link: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
+      link_url: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
     },
     {
-      img: 'assets/img/contents/topic/topic-img_2.jpg',
+      image_url: 'assets/img/contents/topic/topic-img_2.jpg',
       title: 'Lord is Sufficient for all of our needs',
       preacher: 'Pastor Mark Joseph Marquez',
       date: 'January 01, 2024',
@@ -74,10 +73,10 @@ export class TopicComponent implements OnInit, AfterViewInit {
       Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
       
       `,
-      link: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
+      link_url: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
     },
     {
-      img: 'assets/img/contents/topic/topic-img_2.jpg',
+      image_url: 'assets/img/contents/topic/topic-img_2.jpg',
       title: 'Lord is Sufficient for all of our needs',
       preacher: 'Pastor Mark Joseph Marquez',
       date: 'January 01, 2024',
@@ -86,10 +85,10 @@ export class TopicComponent implements OnInit, AfterViewInit {
       Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
       
       `,
-      link: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
+      link_url: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
     },
     {
-      img: 'assets/img/contents/topic/topic-img_2.jpg',
+      image_url: 'assets/img/contents/topic/topic-img_2.jpg',
       title: 'Lord is Sufficient for all of our needs',
       preacher: 'Pastor Mark Joseph Marquez',
       date: 'January 01, 2024',
@@ -98,10 +97,10 @@ export class TopicComponent implements OnInit, AfterViewInit {
       Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
       
       `,
-      link: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
+      link_url: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
     },
     {
-      img: 'assets/img/contents/topic/topic-img_2.jpg',
+      image_url: 'assets/img/contents/topic/topic-img_2.jpg',
       title: 'Lord is Sufficient for all of our needs',
       preacher: 'Pastor Mark Joseph Marquez',
       date: 'January 01, 2024',
@@ -110,7 +109,7 @@ export class TopicComponent implements OnInit, AfterViewInit {
       Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
       
       `,
-      link: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
+      link_url: 'https://www.facebook.com/ahouseofchampions/videos/7433714430038713'
     }
   ];
 

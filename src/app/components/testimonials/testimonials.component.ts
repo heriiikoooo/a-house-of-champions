@@ -20,10 +20,10 @@ export class TestimonialsComponent implements OnInit {
   ngOnInit(): void {
     this.slides = [
       {
-        name: "Patricia Anne Politico",
-        position: 'Member',
-        picture: 'assets/img/contents/testimony/patricia_2.jpg',
-        background: 'assets/img/contents/testimony/bg/pat_BG.jpg',
+        fullname: "Patricia Anne Politico",
+        designation: 'Member',
+        image_url: 'assets/img/contents/testimony/patricia_2.jpg',
+        background_url: 'assets/img/contents/testimony/bg/pat_BG.jpg',
         testimony: 
         `
         <p>Hi I am <span class="_testimonial_name">Bezaleel Josue L. Ganadin</span> and I am a pastor’s kid. Being a pastor’s kid is not like a bed of roses, there is still a lot of struggles, pain, and temptation. When I said temptation I ment being homosexual. </p>
@@ -35,10 +35,10 @@ export class TestimonialsComponent implements OnInit {
         `
       },
       {
-        name: "Ralph Dominic Aquiz",
-        position: 'Local Pastor',
-        picture: 'assets/img/contents/testimony/pastor_ralph_2.jpg',
-        background: 'assets/img/contents/testimony/bg/ralph_BG.jpg',
+        fullname: "Ralph Dominic Aquiz",
+        designation: 'Local Pastor',
+        image_url: 'assets/img/contents/testimony/pastor_ralph_2.jpg',
+        background_url: 'assets/img/contents/testimony/bg/ralph_BG.jpg',
         testimony: 
         `
         <p>Hi I am <span class="_testimonial_name">Bezaleel Josue L. Ganadin</span> and I am a pastor’s kid. Being a pastor’s kid is not like a bed of roses, there is still a lot of struggles, pain, and temptation. When I said temptation I ment being homosexual. </p>
@@ -50,10 +50,10 @@ export class TestimonialsComponent implements OnInit {
         `
       },
       {
-        name: "Angelito Pastorin",
-        position: 'Local Pastor',
-        picture: 'assets/img/contents/testimony/pastor_angel_2.jpg',
-        background: 'assets/img/contents/testimony/bg/angel_BG.jpg',
+        fullname: "Angelito Pastorin",
+        designation: 'Local Pastor',
+        image_url: 'assets/img/contents/testimony/pastor_angel_2.jpg',
+        background_url: 'assets/img/contents/testimony/bg/angel_BG.jpg',
         testimony: 
         `
         <p>Hi I am <span class="_testimonial_name">Bezaleel Josue L. Ganadin</span> and I am a pastor’s kid. Being a pastor’s kid is not like a bed of roses, there is still a lot of struggles, pain, and temptation. When I said temptation I ment being homosexual. </p>
@@ -65,10 +65,10 @@ export class TestimonialsComponent implements OnInit {
         `
       },
       {
-        name: "Ma. Neil Abuela",
-        position: 'Member',
-        picture: 'assets/img/contents/testimony/maneil_2.jpg',
-        background: 'assets/img/contents/testimony/bg/maneil_BG.jpg',
+        fullname: "Ma. Neil Abuela",
+        designation: 'Member',
+        image_url: 'assets/img/contents/testimony/maneil_2.jpg',
+        background_url: 'assets/img/contents/testimony/bg/maneil_BG.jpg',
         testimony: 
         `
         <p>Hi I am <span class="_testimonial_name">Bezaleel Josue L. Ganadin</span> and I am a pastor’s kid. Being a pastor’s kid is not like a bed of roses, there is still a lot of struggles, pain, and temptation. When I said temptation I ment being homosexual. </p>
@@ -80,10 +80,10 @@ export class TestimonialsComponent implements OnInit {
         `
       },
       {
-        name: "Bezaleel Josue Ganadin",
-        position: 'Member',
-        picture: 'assets/img/contents/testimony/joshh_2.jpg',
-        background: 'assets/img/contents/testimony/bg/josh_BG.jpg',
+        fullname: "Bezaleel Josue Ganadin",
+        designation: 'Member',
+        image_url: 'assets/img/contents/testimony/joshh_2.jpg',
+        background_url: 'assets/img/contents/testimony/bg/josh_BG.jpg',
         testimony: 
         `
         <p>Hi I am <span class="_testimonial_name">Bezaleel Josue L. Ganadin</span> and I am a pastor’s kid. Being a pastor’s kid is not like a bed of roses, there is still a lot of struggles, pain, and temptation. When I said temptation I ment being homosexual. </p>
@@ -95,10 +95,10 @@ export class TestimonialsComponent implements OnInit {
         `
       },
       {
-        name: "Earl Lorenz Mendoza",
-        position: 'Member',
-        picture: 'assets/img/contents/testimony/earl_2.jpg',
-        background: 'assets/img/contents/testimony/bg/earl_BG.jpg',
+        fullname: "Earl Lorenz Mendoza",
+        designation: 'Member',
+        image_url: 'assets/img/contents/testimony/earl_2.jpg',
+        background_url: 'assets/img/contents/testimony/bg/earl_BG.jpg',
         testimony: 
         `
         <p>Hi I am <span class="_testimonial_name">Bezaleel Josue L. Ganadin</span> and I am a pastor’s kid. Being a pastor’s kid is not like a bed of roses, there is still a lot of struggles, pain, and temptation. When I said temptation I ment being homosexual. </p>
@@ -110,10 +110,10 @@ export class TestimonialsComponent implements OnInit {
         `
       },
       {
-        name: "Romel Vargas",
-        position: 'Member',
-        picture: 'assets/img/contents/testimony/macky_2.jpg',
-        background: 'assets/img/contents/testimony/bg/macky_BG.jpg',
+        fullname: "Romel Vargas",
+        designation: 'Member',
+        image_url: 'assets/img/contents/testimony/macky_2.jpg',
+        background_url: 'assets/img/contents/testimony/bg/macky_BG.jpg',
         testimony: 
         `
         <p>Hi I am <span class="_testimonial_name">Bezaleel Josue L. Ganadin</span> and I am a pastor’s kid. Being a pastor’s kid is not like a bed of roses, there is still a lot of struggles, pain, and temptation. When I said temptation I ment being homosexual. </p>

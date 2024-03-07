@@ -13,23 +13,23 @@ export class PartnersComponent {
   partners = [
     {
       name: 'Kazam',
-      logo: ''
+      logo_url: 'assets/img/new-logo.png'
     },
     {
       name: 'Quick Discipleship Movement',
-      logo: ''
+      logo_url: 'assets/img/new-logo.png'
     },
     {
       name: 'United Christian of Balayan',
-      logo: ''
+      logo_url: 'assets/img/new-logo.png'
     },
     {
       name: 'God Bless Batangas',
-      logo: ''
+      logo_url: 'assets/img/new-logo.png'
     },
     {
       name: 'Champion Audio System ',
-      logo: ''
+      logo_url: 'assets/img/new-logo.png'
     },
   ]
 }

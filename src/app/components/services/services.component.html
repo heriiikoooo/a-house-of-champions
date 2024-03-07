@@ -1,45 +1,52 @@
 <div class="min-vh-100 max-vh-100 d-flex align-items-center container">
-   <div class="pb-4">
-    <div class="global-section-title">
-        AHOC Services
-    </div>
+    <div class="pb-4 w-100">
+        <div class="global-section-title">
+            AHOC Services
+        </div>
 
-    <div *ngFor="let item of items">
-    <div class="d-flex flex-lg-row flex-column ">
-            <div class="mr-auto w-100">
-                <div class="d-flex align-items-center justify-content-end service-item">
-                    <div class="service-item-details">
-                        <div class="global-sub-titles">UPCOMING EVENTS</div>
-                        <div class="global-date">FEBRUARY 10, 2024</div>
-                        <div class="d-flex justify-content-end ">
-                            <div class="global-contents">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae mi eget nisl bibendum dictum nec ut massa.  
-                            </div> 
+        <div *ngIf="items?.length == 0"  class="d-flex align-items-center justify-content-center">
+            <h3>No upcoming services and events...</h3>
+        </div>
+        <div *ngIf="items?.length > 0" class="d-flex flex-lg-row flex-row flex-wrap flex-grow flex-shrink justify-content-center">
+            <div *ngFor="let item of items; let i =index;" class=""  style="flex:0 0 50% !important; flex-grow: 1; flex-shrink: 1;">
+                <div *ngIf="i % 2 == 0" class="mr-auto w-100">
+                    <div class="d-flex align-items-center justify-content-end service-item">
+                        <div class="service-item-details">
+                            <div class="global-sub-titles text-uppercase">{{ item.title }}</div>
+                            <div class="global-date">{{ item.date | date:'longDate' }}</div>
+                            <div class="d-flex justify-content-end ">
+                                <div class="global-contents">
+                                    {{ item.description }}
+                                </div> 
+                            </div>
                         </div>
-                    </div>
-                    <div class="services-icons-div">
-                        <div class="services-icons"></div>
+                        <div class="services-icons-div">
+                            <div class="services-icons d-flex align-items-center justify-content-center">
+                                <img width="100" alt="AHOC LOGO" [src]="item.image_url"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="w-100 ">
-                <div class="d-flex align-items-center justify-content-start service-item">
-                    <div class="services-icons-div services-icons-div-right">
-                        <div class="services-icons"></div>
-                    </div>
-                    <div class="service-item-details">
-                        <div class="global-sub-titles service-item-align-left">UPCOMING EVENTS</div>
-                        <div class="global-date service-item-align-left">FEBRUARY 10, 2024</div>
-                        <div class="d-flex justify-content-start ">
-                            <div class="global-contents service-item-align-left">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae mi eget nisl bibendum dictum nec ut massa.  
-                            </div> 
+                <div *ngIf="i % 2 != 0" class="w-100" >
+                    <div class="d-flex align-items-center justify-content-start service-item">
+                        <div class="services-icons-div services-icons-div-right">
+                            <div class="services-icons d-flex align-items-center justify-content-center">
+                                <img width="100" alt="AHOC LOGO" [src]="item.image_url"/>
+                            </div>
                         </div>
+                        <div class="service-item-details">
+                            <div class="global-sub-titles service-item-align-left text-uppercase">{{ item.title }}</div>
+                            <div class="global-date service-item-align-left">{{ item.date | date:'longDate' }}</div>
+                            <div class="d-flex justify-content-start ">
+                                <div class="global-contents service-item-align-left">
+                                    {{ item.description }}
+                                </div> 
+                            </div>
+                        </div>
+                        
                     </div>
-                    
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </div>

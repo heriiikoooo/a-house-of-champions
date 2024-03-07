@@ -15,12 +15,12 @@
             
         <!-- <div *ngFor="let slidex of slides; let i = index; first as isFirst">
             {{ i }} -->
-          <div *ngFor="let slide of slides; let i = index; first as isFirst" class="min-vh-100 max-vh-100 carousel-custom-bg" [ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' " [ngStyle]="{ 'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.671)), url('+slide.background+')' }">
+          <div *ngFor="let slide of slides; let i = index; first as isFirst" class="min-vh-100 max-vh-100 carousel-custom-bg" [ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' " [ngStyle]="{ 'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.671)), url('+slide.background_url+')' }">
             <!-- <div class="d-flex align-items-center justify-content-center"> -->
               <div class="min-vh-100 d-flex flex-column align-items-center justify-content-center content-item">
                 <div id="testimonial-tittle">INSPIRATIONAL TESTIMONY</div>
                 <div class="d-flex align-items-center justify-content-center carousel-person-div">
-                  <div class="carousel-person" style="position: relative; " [ngStyle]="{ 'background-image' : 'url('+slide.picture+')' }">
+                  <div class="carousel-person" style="position: relative; " [ngStyle]="{ 'background-image' : 'url('+slide.image_url+')' }">
                     <div class="d-flex align-items-center justify-content-center qoute-icon"><h4 class="pt-5">“</h4></div>
                   </div>
                 </div>
@@ -44,8 +44,8 @@
                     <!--A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. -->
                   </div>
                 </div>
-                <div class="testimony-person-name pt-4">{{ slide.name }}</div>
-                <div class="testimony-person-position pt-0 pb-5">{{ slide.position }}</div>
+                <div class="testimony-person-name pt-4">{{ slide.fullname }}</div>
+                <div class="testimony-person-position pt-0 pb-5">{{ slide.designation }}</div>
               </div>
             <!-- </div> -->
           </div>
@@ -76,12 +76,12 @@
 <div class="modal modal-md modal-lg fade px-4" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div *ngIf="isOpen" class="modal-content">
-      <div class="modal-header d-flex flex-row justify-content-center" [ngStyle]="{ 'background-image' : 'linear-gradient(rgba(255, 255, 255, 0.466),rgba(7, 7, 7, 0.63)), url('+testimony.background+')' }">
+      <div class="modal-header d-flex flex-row justify-content-center" [ngStyle]="{ 'background-image' : 'linear-gradient(rgba(255, 255, 255, 0.466),rgba(7, 7, 7, 0.63)), url('+testimony.background_url+')' }">
         <div class="d-flex align-items-center justify-content-center image-div">
-          <div class="testimony-image"  [ngStyle]="{ 'background-image' : 'url('+testimony.picture+')' }"></div>
+          <div class="testimony-image"  [ngStyle]="{ 'background-image' : 'url('+testimony.image_url+')' }"></div>
         </div>
         <div class="d-flex align-items-center details-div">
-          <div class="testimony-name">{{ testimony.name }}</div>
+          <div class="testimony-name">{{ testimony.fullname }}</div>
           </div>
 
        
