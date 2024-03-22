@@ -1,8 +1,16 @@
 .footer {
-    font-family: "San Francisco Light";
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 20px; */
+    /* text-align: center; */
+    letter-spacing: 0em;
+    color: #7B121E;
     font-size: 15px !important;
+    /* color: #7B121E; */
 }
 
 .footer span {
-    font-family: "San Francisco Medium" !important;
+    font-family: "Nunito Sans" !important;
+    font-weight: 600;
 }

@@ -1,14 +1,85 @@
 import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { trigger, transition, style, animate, state, group } from '@angular/animations';
+import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
+
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  styleUrl: './about.component.css',
+  animations: [
+    trigger('showMe', [
+        state('closed', style({
+            display: 'none',
+        })),
+        state('open', style({
+            display: 'block'
+        })),
+        // transition('* => *', animate(200))
+        transition('closed => open', [
+          group([
+            animate('600ms ease-in-out', style({
+              'opacity': '0'
+            })),
+          ])
+        ]),
+    ]),
+  ]
 })
 export class AboutComponent {
+  pipes!: [TruncatePipe];
 
   constructor(private _sanitizer: DomSanitizer) {}
+
+  slides= [
+    {
+      background_url: 'assets/img/contents/history/1.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/2.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/3.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/4.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/5.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/6.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/7.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/8.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/9.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/10.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/11.jpg',
+    },
+    {
+      background_url: 'assets/img/contents/history/12.jpg',
+    }
+  ]
+
+  showHistory = false;
+
+  state = "closed";
+
+  historyText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel cursus massa. Pellentesque interdum commodo fermentum. Morbi scelerisque sagittis magna ac bibendum. Praesent vitae neque in leo vehicula rutrum. Cras sit amet lobortis libero. Cras quis scelerisque tellus. Nulla laoreet purus non lacus aliquam vulputate. Ut viverra placerat tortor, ac luctus mi venenatis vitae. Vestibulum sagittis libero enim, id porttitor nulla gravida at. Duis quis malesuada tellus, quis posuere nisi. Donec vitae dui at ex vestibulum eleifend non vel magna. Vestibulum tempus sed est et viverra. Nunc tempus eros vitae convallis accumsan. Mauris vestibulum eu felis ut aliquam. Sed dapibus quam eget feugiat faucibus.`;
+
+  changeState(): void {
+    (this.state == "closed") ? this.state = "open" : this.state = "closed";
+  }
 
   items = [
     {
@@ -42,6 +113,11 @@ export class AboutComponent {
 
 
   fn() {
+    
+  }
+
+  history() {
+    this.showHistory =  !this.showHistory;
     
   }
 }

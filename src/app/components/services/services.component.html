@@ -7,10 +7,10 @@
         <div *ngIf="items?.length == 0"  class="d-flex align-items-center justify-content-center">
             <h3>No upcoming services and events...</h3>
         </div>
-        <div *ngIf="items?.length > 0" class="d-flex flex-lg-row flex-row flex-wrap flex-grow flex-shrink justify-content-center">
-            <div *ngFor="let item of items; let i =index;" class=""  style="flex:0 0 50% !important; flex-grow: 1; flex-shrink: 1;">
+        <div *ngIf="items?.length > 0" class="d-flex flex-row flex-wrap justify-content-center">
+            <div *ngFor="let item of items; let i =index;" class=" w-100 flexible-item">
                 <div *ngIf="i % 2 == 0" class="mr-auto w-100">
-                    <div class="d-flex align-items-center justify-content-end service-item">
+                    <div class="d-flex align-items-center justify-content-end service-item w-100">
                         <div class="service-item-details">
                             <div class="global-sub-titles text-uppercase">{{ item.title }}</div>
                             <div class="global-date">{{ item.date | date:'longDate' }}</div>

@@ -1,6 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -38,6 +39,7 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     BrowserModule,
     HammerModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     TopicComponent,
     CoreValuesPannerComponent,
     Theme2024Component,

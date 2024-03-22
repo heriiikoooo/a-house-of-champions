@@ -17,6 +17,7 @@
 
 .service-item-details {
     width: 65%;
+    max-width: 210px;
 }
 
 /* override */
@@ -74,6 +75,10 @@
 }
 
 
+.flexible-item{
+    flex:1 1 50%;
+}
+
 
 
 
@@ -85,6 +90,16 @@
 
 
 /* START RESPONSIVE STYLE  */
+    @media only screen and (max-width: 1020px) {
+        .flexible-item{
+            flex:0 0 100% !important;
+        }
+
+        .service-item-details {
+            width: 65%  !important;
+            max-width: 65% !important;
+        }
+    }
     @media only screen and (max-width: 500px) {
         #service-title {
             font-size: 28px;

@@ -93,7 +93,7 @@
           <a class="nav-link animated-items" href="#">FIND US</a>
         </li>			
         <li class="nav-item px-2 text-nowrap">
-          <a class="nav-link animated-items" href="#">GIVE</a>
+          <a class="nav-link animated-items" data-bs-toggle="modal" href="#giveModal" (click)="showModal = !showModal;">GIVE</a>
         </li>			
 		  </ul>		  
 		</div>
@@ -115,3 +115,61 @@
         test
       </div>
   </div> -->
+
+
+  <div class="modal modal-lg fade px-4" id="giveModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 0 !important;">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-row align-items-center justify-content-between w-100" style="border:none;">
+          <div class="d-flex align-items-center w-100">
+            Give
+          </div>
+  
+         
+          <div class="d-flex justify-content-end w-100">
+            <button #closeBTN type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>`
+          
+        </div>
+        <div class="modal-body">
+          <div style="min-height: 80vh;">
+            <div class="d-flex flex-wrap align-items-center justify-content-center border" [ngClass]="nextPage ? 'go-to-next-page' : ''">
+              <div *ngFor="let item of partnersBanks; let i =index;" class="d-flex justify-content-center border p-3"  style="flex:0 0 50% !important; flex-grow: 1; flex-shrink: 1;">
+                <div role="button" id="gcash" class="give-items border"  [ngClass]="selectedService == i ? 'active-item' : ''" (click)="select(i)">
+                  <div *ngIf="selectedService == i" class="checked-item">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" height="100" width="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.998 2.005c5.517 0 9.997 4.48 9.997 9.997 0 5.518-4.48 9.998-9.997 9.998-5.518 0-9.998-4.48-9.998-9.998 0-5.517 4.48-9.997 9.998-9.997zm0 1.5c-4.69 0-8.498 3.807-8.498 8.497s3.808 8.498 8.498 8.498 8.497-3.808 8.497-8.498-3.807-8.497-8.497-8.497zm-5.049 8.886 3.851 3.43c.142.128.321.19.499.19.202 0 .405-.081.552-.242l5.953-6.509c.131-.143.196-.323.196-.502 0-.41-.331-.747-.748-.747-.204 0-.405.082-.554.243l-5.453 5.962-3.298-2.938c-.144-.127-.321-.19-.499-.19-.415 0-.748.335-.748.746 0 .205.084.409.249.557z" fill-rule="nonzero"/></svg>
+                  </div>
+
+                  <div [innerHtml]="getSVGImage(item.icon)"></div>
+
+                </div>
+              </div>
+              <div *ngIf="nextPage" >NEXT PAGE</div>
+            </div>
+
+            <div *ngIf="nextPage" class="d-flex flex-wrap align-items-center justify-content-center border" [ngClass]="nextPage ? 'next-page' : ''">
+              <div *ngFor="let item of partnersBanks; let i =index;" class="d-flex justify-content-center border p-3"  style="flex:0 0 50% !important; flex-grow: 1; flex-shrink: 1;">
+                <div role="button" id="gcash" class="give-items border"  [ngClass]="selectedService == i ? 'active-item' : ''" (click)="select(i)">
+                  <div *ngIf="selectedService == i" class="checked-item">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" height="100" width="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.998 2.005c5.517 0 9.997 4.48 9.997 9.997 0 5.518-4.48 9.998-9.997 9.998-5.518 0-9.998-4.48-9.998-9.998 0-5.517 4.48-9.997 9.998-9.997zm0 1.5c-4.69 0-8.498 3.807-8.498 8.497s3.808 8.498 8.498 8.498 8.497-3.808 8.497-8.498-3.807-8.497-8.497-8.497zm-5.049 8.886 3.851 3.43c.142.128.321.19.499.19.202 0 .405-.081.552-.242l5.953-6.509c.131-.143.196-.323.196-.502 0-.41-.331-.747-.748-.747-.204 0-.405.082-.554.243l-5.453 5.962-3.298-2.938c-.144-.127-.321-.19-.499-.19-.415 0-.748.335-.748.746 0 .205.084.409.249.557z" fill-rule="nonzero"/></svg>
+                  </div>
+
+                  <div [innerHtml]="getSVGImage(item.icon)"></div>
+
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          
+        </div>
+        <div *ngIf="selectedService >= 0" role="button" class="next-btn"  (click)="nextPage = true">
+          <svg width="100" height="100" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 1c-6.071 0-11 4.929-11 11s4.929 11 11 11 11-4.929 11-11-4.929-11-11-11zm4.828 11.5l-4.608 3.763.679.737 6.101-5-6.112-5-.666.753 4.604 3.747h-11.826v1h11.828z"/></svg>
+          Next
+        </div>
+      </div>
+      
+    </div>
+   
+  </div>
+  

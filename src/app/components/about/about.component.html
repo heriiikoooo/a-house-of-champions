@@ -6,14 +6,72 @@
 
         <div class="d-flex flex-lg-row flex-column">
             <div class="w-100 d-flex flex-column align-items-center global-contents">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel cursus massa. Pellentesque interdum commodo fermentum. Morbi scelerisque sagittis magna ac bibendum. Praesent vitae neque in leo vehicula rutrum. Cras sit amet lobortis libero. Cras quis scelerisque tellus. Nulla laoreet purus non lacus aliquam vulputate. Ut viverra placerat tortor, ac luctus mi venenatis vitae. Vestibulum sagittis libero enim, id porttitor nulla gravida at. Duis quis malesuada tellus, quis posuere nisi. Donec vitae dui at ex vestibulum eleifend non vel magna. Vestibulum tempus sed est et viverra. Nunc tempus eros vitae convallis accumsan. Mauris vestibulum eu felis ut aliquam. Sed dapibus quam eget feugiat faucibus.</p>
-            <!-- <p>Praesent metus magna, porttitor vel lectus at, faucibus varius tellus. Nunc sollicitudin orci nec dapibus tristique. Curabitur dapibus ante sit amet nulla consequat euismod. Curabitur tellus diam, gravida vel neque vel, finibus imperdiet nunc. Vestibulum rutrum eu felis vitae ullamcorper. Donec imperdiet, arcu vel commodo tincidunt, quam nibh tincidunt turpis, sit amet consequat ante lorem vitae lacus. Nullam ut nunc ante.</p> -->
+                <div id="history-images" class="w-100" >
+                    <!-- start  -->
+                    <div id="historyControls" class="carousel slide w-100 h-100" data-bs-ride="carousel"  style="position: relative;">
+                        <ol  class="carousel-indicators" style="z-index: 9;">
+                            <li *ngFor="let item of slides; let i = index; first as isFirst" data-bs-target="#historyControls" [attr.data-bs-slide-to]="i" [ngClass]="{'active' : i == 0}"></li>
+                          </ol>
+                          
+                        <div class="carousel-inner h-100">
+                          <div *ngFor="let slide of slides; let i = index; first as isFirst" class="carousel-custom-bg" [ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' " [ngStyle]="{ 'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.13),rgba(0, 0, 0, 0.562)), url('+slide.background_url+')' }">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#historyControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#historyControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                    <!-- end  -->
+                </div>
+                
+                <div role="button" class="d-flex align-items-center justify-content-between px-2 py-2 pt-4 w-100 "  data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" (click)="history()">
+                    <div class="global-sub-titles" style="color: #7B121E; font-weight: 600; font-size: 23px;">History</div>
+                    <svg *ngIf="!showHistory" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#7B121E" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.5 0c6.347 0 11.5 5.153 11.5 11.5s-5.153 11.5-11.5 11.5-11.5-5.153-11.5-11.5 5.153-11.5 11.5-11.5zm0 1c5.795 0 10.5 4.705 10.5 10.5s-4.705 10.5-10.5 10.5-10.5-4.705-10.5-10.5 4.705-10.5 10.5-10.5zm.5 10h6v1h-6v6h-1v-6h-6v-1h6v-6h1v6z"/></svg>
+                    <svg *ngIf="showHistory"  width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#7B121E" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.5 0c6.347 0 11.5 5.153 11.5 11.5s-5.153 11.5-11.5 11.5-11.5-5.153-11.5-11.5 5.153-11.5 11.5-11.5zm0 1c5.795 0 10.5 4.705 10.5 10.5s-4.705 10.5-10.5 10.5-10.5-4.705-10.5-10.5 4.705-10.5 10.5-10.5zm-6.5 10h13v1h-13v-1z"/></svg>
+                </div>
+                <div *ngIf="!showHistory">
+                    <div class="card card-body" style="border: none; text-align: left;">
+                        <div [innerHTML]="historyText | truncate:['100', '...']"></div>
+                    </div>
+                </div>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="border: none; text-align: left">
+                        <div [innerHTML]="historyText"></div>
+                    </div>
+                  </div>
+            
             </div>
-            <div class="w-100 row d-flex" id="about-data">
+            <div class="w-100 row d-flex flex-row align-items-start px-4 pr-1 " id="about-data">
+                <div class="row w-100 mx-0 px-0 pl-5">
+                    <div *ngFor="let item of items" class="about-data-items mx-0 px-0 py-5" style="flex: 1 0 50%; ">
+                        <div class="d-flex align-items-center">
+                            <div class="about-icon-div">
+                                <div class="about-icon d-flex align-items-center justify-content-center">
+                                    <div [innerHtml]="getSVGImage(item.icon)"></div>
+                                </div>
+                            </div>
+                            <div class="about-data-div d-flex flex-column my-auto">
+                                <div *ngIf="item.title == 'Donations' " class="about-data-quantity">{{ item.data }}</div>
+                                <div *ngIf="item.title != 'Donations' " class="about-data-quantity">{{ item.data}}</div>
+                                <div class="global-sub-titles">{{ item.title }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div class="w-100 row d-flex" id="about-data">
                 <div *ngFor="let item of items" class="col-xs-6 col-sm-6 col-md-6 about-data-items">
                     <div class="d-flex">
                         <div class="about-icon-div">
-                            <div class="about-icon d-flex align-items-center justify-content-center">
+                            <div class="about-icon d-flex justify-content-center">
                                 <div [innerHtml]="getSVGImage(item.icon)"></div>
                             </div>
                         </div>
@@ -24,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="d-flex flex-lg-row flex-column py-3" style="gap:1rem">
             <div class="w-100 mission-vision" id="about-mission">
